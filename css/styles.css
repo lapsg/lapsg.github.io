@@ -8,6 +8,40 @@ body{
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
 }
+/** Scroll **/
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    background: rgba(0, 0, 0, 0.3);
+	width: 10px;
+} 
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 10px #00000070;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, .4);
+	background: linear-gradient(125deg, #033da8, #2d2abb);
+	border-radius: 5px;
+}
+
+::-moz-scrollbar {
+    background: rgba(51, 102, 147, 0.3);
+	width: 10px;
+} 
+::-moz-scrollbar-track {
+	box-shadow: inset 0 0 10px #00000070;
+	border-radius: 5px;
+}
+::-moz-scrollbar-thumb {
+	background: rgba(0, 0, 0, .4);
+	background: linear-gradient(125deg, #18181a, #c03535);
+	border-radius: 5px;
+}
+
+
+
 
 /** Header **/
 #header{
@@ -265,26 +299,6 @@ body{
 }
 .gallery-list img:hover{
     opacity:0.5;
-}
-
-/** Ir arriba **/
-.go-top{
-    position: fixed;
-    bottom:30px;
-    right: 100%;
-    width: 50px;
-    height: 50px;
-    background:#fff;
-    border:3px solid #2737FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.go-top span{
-    font-size:20px;
-    color:#000;
 }
 
 /** Footer **/
